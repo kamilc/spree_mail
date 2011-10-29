@@ -1,0 +1,59 @@
+pl:
+  spree_mail: Spree Mail
+  newsletter_sign_up: Zapisz się do naszego newslettera
+  newsletter: Newsletter
+  newsletter_signed_up: Subskrybujesz nasz newsletter!
+  newsletter_signup: Nie jesteś zapisany no naszego newslettera. Kliknij link aby subskrybować!
+  subscribe: Subskrybuj nasz newsletter!
+  subscribers: Subskrybenci
+  listing_subscribers: Subskrybenci
+  show_subscriber: Pokaż subskrybenta
+  new_subscriber: Nowy subskrybent
+  editing_subscriber: Edytuj subskrybenta
+  view_unsubscribed: Pokaż niesubskrybujących
+  view_all_subscribers: Pokaż wszystkich subskrybujących
+  resubscribe: Ponownie zapisz się do newslettera
+  resubscribe_success: "Pomyślnie dodano do subskrybentów"
+  resubscribe_failed: "Nie udało się ponownie dodać do subskrybentów"
+  subscribe_success_public: "Dodano Cię do subskrybentów!"
+  subscribe_success_failed: "Przepraszamy, nie udało się dodać Cię do subkskrypcji. "
+  unsubscribe_success: "Pomyślnie usunięto z listy subskrybentów"
+  unsubscribe_success_public: "Pomyślnie usunięto z listy subskrybentów."
+  unsubscribe_failed: "Nie udało się usunąć z listy subskrybentów"
+  unsubscribe_failed_public: "Przepraszamy, nie udało się usunąć z listy subskrybentów."
+  subscribe_success: "Dziękujęmy za zapisanie się do naszego newslettera!"
+  subscribe_failed: "Przepraszamy, nie udało się dołączyć Cię do naszego newslettera."
+  subscribe_newsletter_too: "Zapisz się do naszego newslettera"
+  listing_emails: Listing Emails
+  show_email: Show Email
+  new_email: New Email
+  editing_email: Editing Email
+  unintened_email_view: Ta wiadomość nie była przeznaczona dla Ciebie.
+  emails: Emails
+  to: To
+  send: Send
+  body: Body
+  subject: Subject
+  message_body: Message Body
+  contact: Contact
+  delivery_success: Twój email został wysłany!
+  delivery_failed: Przepraszamy, Twój email nie mógł zostać wysłany.
+  unsubscribe_text: Jeżeli nie chcesz więcej otrzymywać tego newslettera
+  click_here: Kliknij tutaj
+  view_in_browser: żeby zobaczyć ten email w przeglądarce
+  visit_online: Odwiedź nas online na
+  received_in_error: "To jest wiadomość z %{site_name}. Jeżeli nie powinieneś jej dostać, prosimy, daj nam znać."
+  message_sent_to_from_on: "Wiadomość została wysłana do %{to} od %{from} w dniu %{on}."
+  unsubscribe_title: Usuń z listy subskrybentów
+  unsubscribe_mail: Podaj swój adres email
+  unsubscribe: Usuń z listy subskrybentów
+  select_subscribers: Select subscribers
+  select_all: Select All
+  deselect_all: Deselect All
+  message_details: Szczegóły wiadomości
+  sign_up_for_our_newsletter: Zapisz się do naszego newslettera
+  newsletter_text_signup: Lorem Ipsum dolor sit amet...
+  activerecord:
+    errors:
+      messages:
+        invalid_email: wydaje się być niepoprawny
