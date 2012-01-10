@@ -4,7 +4,7 @@ require 'spree_auth'
 require 'mail'
 require 'mustache'
 require 'meta_search'
-require 'spree_mail/custom_hooks'
+#require 'spree_mail/custom_hooks'
 require 'spree_mail/has_token'
 
 module SpreeMail
@@ -22,6 +22,24 @@ module SpreeMail
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator.rb")) do |c|
         Rails.env.production? ? require(c) : load(c)
       end
+
+      Deface::Override.new(:virtual_path => "users/show",
+                    :name => "mail_account_summary_mailer",
+                    :insert_after => "[data-hook='account_summary'] > div.right",
+                    :partial => "hooks/account_summary",
+                    :disabled => false)
+
+      Deface::Override.new(:virtual_path => "user_registrations/new",
+                     :name => "add_mailers_to_login_extras",
+                     :insert_after => "[data-hook='login_extras']",
+                     :partial => "hooks/signup_checkbox",
+                     :disabled => false)
+
+      Deface::Override.new(:virtual_path => "layouts/admin",
+                     :name => "converted_admin_tabs_mailers_tab",
+                     :insert_bottom => "[data-hook='admin_tabs']",
+                     :partial => "admin/hooks/subscribers_tab",
+                     :disabled => false)
       
     end
 
